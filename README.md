@@ -23,4 +23,4 @@ RITESH KUMAR MOHAPATRA
 [<img src="https://image.flaticon.com/icons/svg/281/281769.svg" width="35" padding="10">](mohapatraritesh97@gmail.com)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="35" padding="10">](https://github.com/RITESHMOHAPATRA)
 
-<p align="center">Made with ❤️ by **RITESH KUMAR MOHAPATRA** </p>
+<p align="center">Made with ❤️ by <b>RITESH KUMAR MOHAPATRA</b> </p>
