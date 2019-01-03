@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     // results
     private ListView resultsList;
-    private List<String> results = new ArrayList<String>();
+    private List<String> results = new ArrayList<>();
     private ArrayAdapter<String> adapter;
 
     private FloatingActionButton fab;
@@ -74,19 +74,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialize the views
-        textView = (TextView) findViewById(R.id.textView);
-        imageView = (ImageView) findViewById(R.id.image);
-        progress = (ProgressBar) findViewById(R.id.progressBar);
+        textView = findViewById(R.id.textView);
+        imageView = findViewById(R.id.image);
+        progress = findViewById(R.id.progressBar);
         textViewer = findViewById(R.id.textViewer);
-        resultsList = (ListView) findViewById(R.id.results);
-        fab = (FloatingActionButton) findViewById(R.id.volume);
+        resultsList = findViewById(R.id.results);
+        fab = findViewById(R.id.volume);
         emptyView = findViewById(R.id.empty_view);
         emptyView.setVisibility(View.VISIBLE);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar); // set toolbar as the ActionBar
 
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,results);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, results);
         resultsList.setAdapter(adapter);
         resultsList.setItemsCanFocus(false);
         resultsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -291,11 +291,11 @@ public class MainActivity extends AppCompatActivity {
         {
             result = URLEncoder.encode(s, "UTF-8")
                     .replaceAll("\\+", "%20")
-                    .replaceAll("\\%21", "!")
-                    .replaceAll("\\%27", "'")
-                    .replaceAll("\\%28", "(")
-                    .replaceAll("\\%29", ")")
-                    .replaceAll("\\%7E", "~");
+                    .replaceAll("%21", "!")
+                    .replaceAll("%27", "'")
+                    .replaceAll("%28", "(")
+                    .replaceAll("%29", ")")
+                    .replaceAll("%7E", "~");
         }
 
         // This exception should never occur.
